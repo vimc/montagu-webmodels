@@ -24,7 +24,7 @@ constructor(
 
 data class CreateBurdenEstimateSet(
         val type: BurdenEstimateSetType,
-        @RequiredWhen("isStochastic")
+        @RequiredWhen("isStochastic", "type")
         val modelRunParameterSet: Int?
 )
 {
