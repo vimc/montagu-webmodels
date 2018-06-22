@@ -4,7 +4,7 @@ import java.time.Duration
 
 interface AuthenticationResponse
 
-class SuccessfulAuthentication(val accessToken: Any, lifeSpan: Duration): AuthenticationResponse
+class SuccessfulAuthentication(val accessToken: Compressed, lifeSpan: Duration): AuthenticationResponse
 {
     val tokenType = "bearer"
     val expiresIn = lifeSpan.seconds
