@@ -1,4 +1,4 @@
-package org.vaccineimpact.api.models
+package org.vaccineimpact.api.models.reports
 
 import java.beans.ConstructorProperties
 import java.time.Instant
